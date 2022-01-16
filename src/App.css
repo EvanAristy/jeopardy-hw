@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(https://giffiles.alphacoders.com/142/14261.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+    display: flex;
+    margin: 50px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 50%;
+    border: 5px solid white;
+    background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    color: coral;
+    font-size: 3em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.points{
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+h2, h4, p {
+    color: goldenrod;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.points > button{
+    margin: 10%;
+}
+
+.question{
+    text-align: center;
+}
+
+.answer{
+    text-align: center;
+}
+
+.first{
+    color: #e3f122;
+}
+
+.second{
+    color: lightcoral;
+}
+
+.extra{
+    display: flex;
 }
