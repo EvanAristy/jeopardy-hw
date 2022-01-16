@@ -9,7 +9,7 @@ class App extends Component {
     api: "api/",
     random: "random",
     data: [],
-    score: "0",
+    score: 0,
     currScore: "0",
     toggle: false
   }
@@ -31,12 +31,12 @@ class App extends Component {
 
           <div className='points'>
             <h2>Score: <span className='first'>{this.state.score}</span></h2>
-            <button onClick={() => this.setState({score: this.state.data.value})}>+</button>
-            <button>-</button>
+            <button className='addButton' onClick={() => this.setState({score: this.state.score + 1})}>+</button>
+            <button className='subtractButton' onClick={() => this.setState({score: this.state.score - 1})}>-</button>
           </div>
 
           <form onSubmit={this.handleSubmit}>
-            <button type='submit'>Get Question</button>
+            <button className='button' type='submit'>Get Question</button>
           </form>
 
           <div className='question'>
@@ -46,7 +46,7 @@ class App extends Component {
 
           <div className='answer'>
             
-            <button onClick={() => this.setState({toggle: !this.state.toggle})}>Show Answer</button>
+            <button className='button' onClick={() => this.setState({toggle: !this.state.toggle})}>Show Answer</button>
             {
               this.state.toggle ? <h4>Answer: <br></br> <span className='second'>{this.state.data.answer}</span></h4> : null
             }
