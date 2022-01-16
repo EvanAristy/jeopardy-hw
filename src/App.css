@@ -157,3 +157,33 @@ form{
     border-radius: 20px;
     text-decoration: none;
  }
+
+ .resetButton {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #000000;
+    font-family: Brush Script MT;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 1px 10px 1px 10px;
+    background-color: #3D50F6;
+    -webkit-box-shadow: 1px 1px 20px 0 #0059A0;
+    -moz-box-shadow: 1px 1px 20px 0 #0059A0;
+    box-shadow: 1px 1px 20px 0 #0059A0;
+    text-shadow: 1px 1px 20px #FFFFFF;
+    border: solid #3D50F6 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .resetButton:hover {
+    background: #3D50F6;
+    border: solid #FFFFFF 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }

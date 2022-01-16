@@ -9,6 +9,7 @@ class App extends Component {
     api: "api/",
     random: "random",
     data: [],
+    // category: {},
     score: 0,
     currScore: "0",
     toggle: false
@@ -33,6 +34,7 @@ class App extends Component {
             <h2>Score: <span className='first'>{this.state.score}</span></h2>
             <button className='addButton' onClick={() => this.setState({score: this.state.score + 1})}>+</button>
             <button className='subtractButton' onClick={() => this.setState({score: this.state.score - 1})}>-</button>
+            <button className='resetButton' onClick={() => this.setState({score: 0})}>reset</button>
           </div>
 
           <form onSubmit={this.handleSubmit}>
@@ -40,6 +42,7 @@ class App extends Component {
           </form>
 
           <div className='question'>
+            {/* <h4>Category: <br></br> <span className='first'>{this.state.data.category.title}</span></h4> */}
             <h4>Question: <br></br> <span className='second'>{this.state.data.question}</span></h4>
             <h4>Points: <br></br> <span className='first'>{this.state.data.value}</span></h4>
           </div>
